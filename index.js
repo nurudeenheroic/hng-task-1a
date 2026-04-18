@@ -38,13 +38,11 @@ editButton.addEventListener("click" , () => {
     priorityInput.value = priority.innerText;
     
 });
-cancelButton.addEventListener("click" , (event) => {
-    event.preventDefault();
+cancelButton.addEventListener("click" , () => {
     card.style.display = "flex";
     editForm.style.display ="none";
 });
-saveButton.addEventListener("click" , (event) => {
-    event.preventDefault();
+saveButton.addEventListener("click" , () => {
     title.innerText = titleInput.value;
     description.innerText = descriptionInput.value;
     priority.innerText = priorityInput.value;
